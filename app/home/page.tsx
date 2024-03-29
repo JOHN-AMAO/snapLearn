@@ -1,4 +1,5 @@
 "use client";
+import Sidebar from "@/components/Sidebar";
 import { useSession, signOut } from "next-auth/react";
 import Image from "next/image";
 import React from "react";
@@ -8,7 +9,7 @@ const Page = () => {
   console.log(session);
   return (
     <>
-      {" "}
+      <Sidebar />
       <div>Hello users</div>
       <h1>{session?.data?.user?.email}</h1>
       <Image
