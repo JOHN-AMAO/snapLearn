@@ -18,13 +18,6 @@ export function AuthForm() {
   const [variant, setVariant] = useState<Variant>("REGISTER");
   const session = useSession();
   const router = useRouter();
-  const toggleVariant = useCallback(() => {
-    if (variant === "REGISTER") {
-      setVariant("LOGIN");
-    } else {
-      setVariant("REGISTER");
-    }
-  }, [variant]);
 
   useEffect(() => {
     if (session?.status === "authenticated") {
