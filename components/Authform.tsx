@@ -63,7 +63,7 @@ export function AuthForm() {
   };
 
   return (
-    <div className='min-h-screen bg-[#0a1e22] flex justify-center items-center p-4'>
+    <div className='min-h-screen bg-[#08111f] flex justify-center items-center p-4'>
       <div className='bg-white p-8 rounded-lg shadow-lg max-w-md w-full space-y-8'>
         <div className='space-y-6'>
           <h2 className='text-center text-3xl font-extrabold text-gray-900'>

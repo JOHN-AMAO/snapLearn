@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
-    <main className='relative bg-[#113238]'>
+    <main className='relative bg-[#0b172b]'>
       <Navbar />
 
       <div className='flex'>

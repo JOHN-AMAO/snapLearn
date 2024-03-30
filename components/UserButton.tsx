@@ -20,7 +20,7 @@ const UserButton = () => {
             width={50}
             height={50}
             alt='me'
-            className='rounded-full w-10 border-4 border-green-500'
+            className='rounded-full w-10 border-4 border-blue-600'
           />
         </PopoverTrigger>
         <PopoverContent className='bg-white text-black mr-5'>
