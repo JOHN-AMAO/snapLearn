@@ -22,7 +22,7 @@ export function AuthForm() {
   useEffect(() => {
     if (session?.status === "authenticated") {
       console.log("authenticated");
-      router.push("/posts");
+      router.push("/home");
     }
   }, [session, router]);
 
@@ -56,7 +56,7 @@ export function AuthForm() {
         }
         if (callback?.ok && !callback.error) {
           toast.success("Sucess");
-          router.push("/posts");
+          router.push("/home");
         }
       });
     }

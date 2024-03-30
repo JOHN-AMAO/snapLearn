@@ -5,12 +5,12 @@ export const SidebarLinks = [
     imgUrl: "/icons/Home.svg",
   },
   {
-    label: "Upcoming Classes",
+    label: "Upcoming",
     route: "/upcoming",
     imgUrl: "/icons/upcoming.svg",
   },
   {
-    label: "Previous Classes",
+    label: "Previous",
     route: "/previous",
     imgUrl: "/icons/previous.svg",
   },
