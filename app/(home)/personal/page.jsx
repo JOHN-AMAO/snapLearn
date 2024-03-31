@@ -3,7 +3,7 @@
 import { useSession } from "next-auth/react";
 import { useStreamVideoClient } from "@stream-io/video-react-sdk";
 import { useRouter } from "next/navigation";
-import { customAlphabet } from "nanoid";
+import { customAlphabet } from "nanoid/non-secure";
 import { useGetCallById } from "@/hooks/useGetCallById";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
@@ -28,9 +28,7 @@ const PersonalRoom = () => {
   const { toast } = useToast();
 
   const Id = user?.data?.user?.name;
-  const nanoid = customAlphabet(Id, 10);
-  const meetingId = nanoid;
-
+  const meetingId = Id ? Id.replace(/\s/g, "") : null;
   const { call } = useGetCallById(meetingId);
 
   const startRoom = async () => {
